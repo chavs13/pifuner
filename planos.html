@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jardim Celeste</title>
+    <link rel="icon" href="Logo Funerária (7).png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Radley&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .title-section h1 {
+            font-family: 'Radley', cursive;
+            color: #2d6a4f;
+            margin-top: 50px;
+            margin-bottom: 40px;
+        }
+
+        .navbar {
+            background-color: #ffffff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidade */
+        }
+        .navbar .navbar-brand img {
+            width: 200px; /* Defina o tamanho da imagem */
+        }
+        .navbar .nav-link {
+            color: white;
+        }
+        .navbar .nav-link:hover {
+            color: #198754;
+        }
+        .navbar .navbar-nav {
+            margin-left: auto; /* Alinha os botões à direita */
+        }
+        /* Estilo para os botões */
+        .navbar .btn {
+            margin-left: 10px; /* Espaçamento entre os botões */
+            margin-bottom: 10px;
+        }
+
+        .card {
+            border: 3px solid #198754;
+        }
+
+        .card-body {
+            text-align: center;
+        }
+
+        .card-img-top {
+            width: 60%;
+            margin: 0 auto;
+            padding: 10px;
+        }
+
+        .modal-content {
+            border: 3px solid #198754;
+        }
+
+        .modal-title {
+            color: #198754;
+        }
+
+        .btn-success {
+            background-color: #198754;
+            border-color: #198754;
+        }
+        
+        .dropdown-item:hover{
+          color: #198754;
+        }
+        .dropdown-item:active{
+          background-color: #198754;
+          color:#F5F3E6;
+        }
+        .fonte-radley{
+          font-family: 'Radley', cursive;
+        }
+
+        @media (max-width: 576px) {
+            .card-img-top {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="logo.png" alt="Logo"> <!-- Substitua "logo.png" pela sua imagem -->
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item fonte-radley">
+            <a href="inicio.html" class="btn btn-outline-success">Início</a>
+          </li>
+          <br>
+          <li class="nav-item fonte-radley">
+            <a href="sobre_nos.html" class="btn btn-outline-success">Sobre nós</a>
+          </li>
+          <br>
+          <li class="nav-item dropdown fonte-radley">
+            <a class="btn btn-outline-success" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Serviços
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="servicos_funerarios.html">Serviços Funerários</a></li>
+              <li><a class="dropdown-item " href="planos.html">Planos Funerários</a></li>
+            </ul>
+          </li>
+          <br>
+          <li class="nav-item fonte-radley">
+            <button class="btn btn-outline-success">Fale Conosco</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="title-section text-center">
+    <h1>Planos Funerários</h1>
+    <h2>
+
+    </h2>
+  </div>
+
+  <div class="container mt-4">
+    <div class="row g-4">
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="card text-center">
+          <img src="do-utilizador.png"  class="card-img-top mx-auto" alt="Plano Individual">
+          <div class="card-body">
+            <h5 class="card-title">Plano Individual</h5>
+            <h5 class="card-title"><strong>R$80,00 mensais</strong></h5>
+            <ul class="card-text" style="text-align: left;">
+              <li>Serviços Funerários</li>
+              <li>Apoio ao Luto</li>
+              <li>Custos e Pagamentos</li>
+              <li>Transporte e Translado</li>
+              <li>Benefícios Extras</li>
+            </ul>
+            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#myModalIndividual">Mais informações</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="card text-center">
+          <img src="pessoas (1).png" class="card-img-top mx-auto" alt="Plano Casal">
+          <div class="card-body">
+            <h5 class="card-title">Plano Casal</h5>
+            <h5 class="card-title"><strong>R$120,00 mensais</strong></h5>
+            <ul class="card-text" style="text-align: left;">
+              <li>Serviços Funerários</li>
+              <li>Apoio ao Luto</li>
+              <li>Custos e Pagamentos</li>
+              <li>Transporte e Translado</li>
+              <li>Benefícios Extras</li>
+            </ul>
+            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#myModalCasal">Mais informações</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="card text-center">
+          <img src="pessoas.png" class="card-img-top mx-auto" alt="Plano Familiar">
+          <div class="card-body">
+            <h5 class="card-title">Plano Familiar</h5>
+            <h5 class="card-title"><strong>R$180,00 mensais</strong></h5>
+            <ul class="card-text" style="text-align: left;">
+              <li>Serviços Funerários</li>
+              <li>Apoio ao Luto</li>
+              <li>Custos e Pagamentos</li>
+              <li>Transporte e Translado</li>
+              <li>Benefícios Extras</li>
+            </ul>
+            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#myModalFamiliar">Mais informações</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Individual -->
+  <div class="modal fade" id="myModalIndividual" tabindex="-1" aria-labelledby="myModalLabelIndividual" aria-hidden="true">
+    <div class="modal-dialog border border-success">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-success" id="myModalLabelIndividual">Plano Individual - Mais Informações</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="text-success-emphasis">Plano funerário que oferece cobertura para um único membro da família, com serviços essenciais como transporte e velório. Ideal para quem precisa de uma solução mais acessível e prática.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Casal -->
+  <div class="modal fade" id="myModalCasal" tabindex="-1" aria-labelledby="myModalLabelCasal" aria-hidden="true">
+    <div class="modal-dialog border border-success">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-success" id="myModalLabelCasal">Plano Casal - Mais Informações</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="text-success-emphasis">Plano funerário para casais, com cobertura para dois membros da família. Oferece os mesmos serviços essenciais, com vantagens adicionais para quem busca uma solução mais econômica para duas pessoas.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Familiar -->
+  <div class="modal fade" id="myModalFamiliar" tabindex="-1" aria-labelledby="myModalLabelFamiliar" aria-hidden="true">
+    <div class="modal-dialog border border-success">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-success" id="myModalLabelFamiliar">Plano Familiar - Mais Informações</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="text-success-emphasis">Plano familiar com cobertura para todos os membros de uma família. Oferece o melhor custo-benefício, com serviços completos de transporte, velório e sepultamento para a família toda.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer style="padding-top: 150px;">
+    <div class="footer" style="background-color: #152D2E; display: flex; justify-content: space-evenly; align-items: center; padding: 80px;">
+      <div style="color: #F5F3E6;" class="endereço">
+          <h3>Endereço:</h3>
+          <h5>Av. Ivan Borges Porto, 435 - Jardim Centro,<br> Patos de Minas - MG, 38703-008</h5>
+      </div>
+      <div style="color: #F5F3E6;" class="contato">
+          <h3>Contato</h3>
+          <h5>Whatsapp: (34) 99335-3867</h5>
+          <h5> Fixo: (34) 99382-8922</h5>
+      </div>
+  </div>
+  
+    <div class="mapa" style="width: 100%; height: 450px;">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3781.7244642793544!2d-46.50950388829822!3d-18.586456897810343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ae8ac557957281%3A0x1635d8b37fce816d!2sSENAC%20Patos%20de%20Minas!5e0!3m2!1spt-BR!2sbr!4v1732825412318!5m2!1spt-BR!2sbr" 
+          width="100%" 
+          height="100%" 
+          style="border:0; width: 100%; height: 100%;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+  </div>
+  
+    </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jardim Celeste</title>
+    <link rel="icon" href="Logo Funerária (7).png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Radley&display=swap" rel="stylesheet"> <!-- Fonte Radley -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <style>
+        .title-section h1 {
+            font-family: 'Radley', cursive;
+            color: #2d6a4f;
+            margin-top: 50px;
+            margin-bottom: 40px;
+        }
+        /* Navbar Styles */
+        
+        .navbar {
+            background-color: #ffffff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidade */
+        }
+        .navbar .navbar-brand img {
+            width: 200px; /* Defina o tamanho da imagem */
+        }
+        .navbar .nav-link {
+            color: white;
+        }
+        .navbar .nav-link:hover {
+            color: #198754;
+        }
+        .navbar .navbar-nav {
+            margin-left: auto; /* Alinha os botões à direita */
+        }
+        /* Estilo para os botões */
+        .navbar .btn {
+            margin-left: 10px; /* Espaçamento entre os botões */
+            margin-bottom: 10px;
+        }
+        /* Footer Styles */
+        footer {
+            background-color: #152D2E;
+            color: #ffffff;
+        }
+        footer .footer {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+        .mapa {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .mapa iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+        }
+        /* Custom Styles for Content */
+        .fundo_s h4 {
+            color: #333;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .avaliacao_p h2 {
+            color: #155724;
+            text-align: center;
+            margin-top: 30px;
+        }
+        .carousel-item1, .carousel-item2 {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+        .carousel-inner {
+            margin: 0 auto;
+        }
+        .dropdown-item:hover{
+          color: #198754;
+        }
+        .dropdown-item:active{
+          background-color: #198754;
+          color:#f5f3e6;
+        }
+        /* Media Query */
+        @media screen and (max-width: 768px) {
+            footer .footer {
+                flex-direction: column;
+                align-items: center;
+            }
+            .mapa iframe {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="logo.png" alt="Logo"> <!-- Substitua "logo.png" pela sua imagem -->
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item fonte-radley">
+              <a href="inicio.html" class="btn btn-outline-success">Início</a>
+            </li>
+            <br>
+            <li class="nav-item fonte-radley">
+              <a href="sobre_nos.html" class="btn btn-outline-success">Sobre nós</a>
+            </li>
+            <br>
+            <li class="nav-item dropdown">
+              <a class="btn btn-outline-success" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Serviços
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="servicos_funerarios.html">Serviços Funerários</a></li>
+                <li><a class="dropdown-item " href="planos.html">Planos Funerários</a></li>
+              </ul>
+            </li>
+            <br>
+            <li class="nav-item fonte-radley">
+              <button class="btn btn-outline-success">Fale Conosco</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Content Section -->
+    <div class="title-section text-center" style="padding: 40px;">
+        <h2>Sobre Nós</h2>
+        <div class="fundo_s">
+            <h4>Com mais de 25 anos de experiência e confiabilidade no mercado de serviços funerários, a Jardim Celeste Funerária é a escolha certa para garantir a qualidade e o atendimento de alto padrão que você merece.</h4>
+            <h4>Nossa ampla rede de prestadores de serviços funerários em toda a região é cuidadosamente avaliada e selecionada para manter sempre o nosso padrão de qualidade, respeito e atenção.</h4>
+            <h4>Além disso, oferecemos uma rede de benefícios diários com profissionais e instituições qualificadas nas áreas de ensino, comércio, saúde e muito mais!</h4>
+            <img src="imagem-da-funeraria.jpg" alt="imagem da funerária" style="max-width: 100%; border-radius: 10px; margin-top: 20px;">
+        </div>
+
+        <!-- Avaliações Section -->
+        <div class="avaliacao_p">
+            <h2>Avaliações</h2>
+            <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="avaliacao1.jpg" class="d-block w-100" alt="Avaliação 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="avaliacao2.jpg" class="d-block w-100" alt="Avaliação 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="avaliacao3.jpg" class="d-block w-100" alt="Avaliação 3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer" style="background-color: #152D2E; display: flex; justify-content: space-evenly; align-items: center; padding: 80px;">
+          <div style="color: #ffffff;" class="endereço">
+              <h3>Endereço:</h3>
+              <h5>Av. Ivan Borges Porto, 435 - Jardim Centro,<br> Patos de Minas - MG, 38703-008</h5>
+          </div>
+          <div style="color: #ffffff;" class="contato">
+              <h3>Contato</h3>
+              <h5>Whatsapp: (34) 99335-3867</h5>
+              <h5> Fixo: (34) 99382-8922</h5>
+          </div>
+      </div>
+      
+      <div class="mapa" style="width: 100%; height: 450px;">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3781.7244642793544!2d-46.50950388829822!3d-18.586456897810343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ae8ac557957281%3A0x1635d8b37fce816d!2sSENAC%20Patos%20de%20Minas!5e0!3m2!1spt-BR!2sbr!4v1732825412318!5m2!1spt-BR!2sbr"  
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+            style="border:0; width: 100%; height: 100%; border-radius: 20px;">
+        </iframe>
+    </div>
+    
+        </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
+    </html>
